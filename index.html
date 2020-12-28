@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewport-2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <section class="l-form">
+        <form>
+            <fieldset>     <!--  Chooses portrait or landscape -->
+            <div class="land">
+                <input type="radio" id="landscape" name="orientatioon" value="landscape" id="land">
+                <label for="landscape">landscape</label><br>
+                <div id="box-1">
+
+                </div>
+            </div>
+                <input type="radio" id="portrait" name="orientatioon" value="portrait">
+                <label for="portrait">portrait</label><br>
+
+            </fieldset>
+            <fieldset>          <!-- takes url from image -->
+                <label for="url">Enter an https:// URL: of the image you would like to use on your card</label>
+                <input type="url" name="url" id="url"
+                placeholder="https://example.com"
+                pattern="https://.*" size="30"
+                required>
+            </fieldset>
+            <fieldset>          <!-- Governs the short message limited to 15 characters... enough to say "Merry Christmas (15 chars inc space)" Maybe add Camel Case in js output? -->
+                <input type="text" name="s-message" id="s-message" placeholder="Type a short message here" size="15" name="name" required
+                minlength="4" maxlength="18">
+            </fieldset>
+            <fieldset>
+                <label for="font-select">Choose a Font:</label>
+                <select id="font-select">
+            <optgroup label="font-select">
+                <option id="f1">blah</option>
+                <option id="f2">blah</option>
+                <option id="f3">blah</option>
+            </optgroup>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
